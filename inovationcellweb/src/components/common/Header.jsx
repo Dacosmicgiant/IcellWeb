@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from './Icell.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,7 @@ export default function Header() {
     { name: 'Events', href: '/events' },
     { name: 'Projects', href: '/projects' },
     { name: 'Blog', href: '/blog' },
+    { name: 'Developers', href: '/developers' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -23,10 +25,17 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary">Innovation Cell</span>
+        <Link to="/" className="flex items-center space-x-3">
+            {/* If logo is in src/assets */}
+            <img src={logo} alt="Innovation Cell Logo" className="h-12 w-auto" />
+            {/* OR if logo is in public folder */}
+            {/* <img src="/your-logo.png" alt="Innovation Cell Logo" className="h-12 w-auto" /> */}
+            
+          
           </Link>
+          {/* <Link to="/" className="flex items-center">
+            <span className="text-2xl font-bold text-primary">Innovation Cell</span>
+          </Link> */}
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

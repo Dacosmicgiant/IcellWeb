@@ -35,6 +35,39 @@ export default function Team() {
         email: "emma@example.com"
       }
     },
+    {
+        name: "Emma Davis",
+        role: "Innovation Manager",
+        image: "/api/placeholder/300/300",
+        bio: "Specializes in project management and startup incubation.",
+        social: {
+          linkedin: "#",
+          github: "#",
+          email: "emma@example.com"
+        }
+      },
+      {
+        name: "Emma Davis",
+        role: "Innovation Manager",
+        image: "/api/placeholder/300/300",
+        bio: "Specializes in project management and startup incubation.",
+        social: {
+          linkedin: "#",
+          github: "#",
+          email: "emma@example.com"
+        }
+      },
+      {
+        name: "Emma Davis",
+        role: "Innovation Manager",
+        image: "/api/placeholder/300/300",
+        bio: "Specializes in project management and startup incubation.",
+        social: {
+          linkedin: "#",
+          github: "#",
+          email: "emma@example.com"
+        }
+      },
     // Add more team members as needed
   ];
 
