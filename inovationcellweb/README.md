@@ -1,70 +1,172 @@
-# Getting Started with Create React App
+# Innovation Cell Website 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive website for the College Innovation Cell built with React and Tailwind CSS. This platform serves as a hub for innovation, connecting students, mentors, and resources.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- **Modern Design**: Clean and responsive UI built with React and Tailwind CSS
+- **Interactive Components**: Dynamic animations and user-friendly interfaces
+- **Responsive Layout**: Optimized for all devices (mobile, tablet, desktop)
+- **Performance Optimized**: Fast loading times and smooth animations
 
-### `npm start`
+### 📱 Key Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Home**: Dynamic landing page with animated hero section
+- **About**: Team information and mission statement
+- **Events**: Upcoming and past events with filtering
+- **Projects**: Showcase of student projects with category filtering
+- **Blog**: Latest news and articles
+- **Developers**: Meet the development team
+- **Contact**: Get in touch form with interactive map
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- React 18
+- React Router v6
+- Tailwind CSS
+- Lucide Icons
+- PostCSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/innovation-cell-website.git
+```
 
-### `npm run eject`
+2. Navigate to project directory
+```bash
+cd innovation-cell-website
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Project Structure
 
-## Learn More
+```
+innovation-cell-website/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   └── assets/
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   ├── home/
+│   │   ├── about/
+│   │   ├── events/
+│   │   ├── projects/
+│   │   ├── blog/
+│   │   └── contact/
+│   ├── pages/
+│   ├── styles/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
+└── package.json
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎨 Customization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Colors
 
-### Code Splitting
+The default color scheme can be modified in `tailwind.config.js`:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```javascript
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#FFA500",    // Orange
+        secondary: "#FFFFFF",  // White
+        accent: "#333333",    // Dark Gray
+      }
+    }
+  }
+}
+```
 
-### Analyzing the Bundle Size
+### Typography
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The website uses the following fonts:
+- Headings: Poppins
+- Body: Roboto
+- Additional: Montserrat
 
-### Making a Progressive Web App
+## 🔧 Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Commands
 
-### Advanced Configuration
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run preview`: Preview production build
+- `npm run lint`: Run ESLint
+- `npm test`: Run tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Adding New Pages
 
-### Deployment
+1. Create new component in `src/pages`
+2. Add route in `src/routes.jsx`
+3. Add navigation link in `src/components/common/Header.jsx`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📱 Responsive Design
 
-### `npm run build` fails to minify
+The website is responsive with breakpoints at:
+- Mobile: 320px
+- Tablet: 768px
+- Desktop: 1024px
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## 👥 Team
+
+- Project Lead: Gaurav Pawar
+- Frontend Developer: Gaurav Pawar and Aditya Chauhan
+- UI/UX Designer: Vishakha Karande
+- Content Writer: Aditya Chauhan
+
+## 📞 Support
+
+For support, email [support@innovationcell.edu] or join our Slack channel.
+
+## 🙏 Acknowledgments
+
+- [React Documentation](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- All our contributors and supporters
+
+---
+
+Built with ❤️ by the Innovation Cell Team
