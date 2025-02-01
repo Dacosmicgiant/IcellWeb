@@ -37,27 +37,39 @@ A modern, responsive website for the College Innovation Cell built with React an
 ### Installation
 
 1. Clone the repository
+
 ```bash
-git clone https://github.com/your-username/innovation-cell-website.git
+git clone https://github.com/your-username/IcellWeb.git
 ```
 
-2. Navigate to project directory
+2. Navigate to frontend directory
+
 ```bash
-cd innovation-cell-website
+cd frontend
+npm i
 ```
 
-3. Install dependencies
+3. Open new terminal and navigate to backend
+
 ```bash
-npm install
-# or
-yarn install
+cd backend
+npm i
 ```
 
 4. Start the development server
+
+- frontend
+
 ```bash
+cd frontend
+npm run start
+```
+
+- backend
+
+```bash
+cd backend
 npm run dev
-# or
-yarn dev
 ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser
@@ -98,18 +110,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#FFA500",    // Orange
-        secondary: "#FFFFFF",  // White
-        accent: "#333333",    // Dark Gray
-      }
-    }
-  }
-}
+        primary: "#FFA500", // Orange
+        secondary: "#FFFFFF", // White
+        accent: "#333333", // Dark Gray
+      },
+    },
+  },
+};
 ```
 
 ### Typography
 
 The website uses the following fonts:
+
 - Headings: Poppins
 - Body: Roboto
 - Additional: Montserrat
@@ -118,7 +131,7 @@ The website uses the following fonts:
 
 ### Commands
 
-- `npm run dev`: Start development server
+- `npm run start`: Start development server
 - `npm run build`: Build for production
 - `npm run preview`: Preview production build
 - `npm run lint`: Run ESLint
@@ -133,6 +146,7 @@ The website uses the following fonts:
 ## 📱 Responsive Design
 
 The website is responsive with breakpoints at:
+
 - Mobile: 320px
 - Tablet: 768px
 - Desktop: 1024px
